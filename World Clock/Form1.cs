@@ -20,7 +20,7 @@ namespace World_Clock
             InitializeComponent();
             UpdateTime();
         }
-
+        // Ayaan Khan
         private void bttnAddCity_Click(object sender, EventArgs e)
         {
             string timeStamp = Convert.ToString((int)DateTime.Now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
@@ -152,7 +152,7 @@ namespace World_Clock
         }
         
 
-       // Timers starts
+       // Timers starts (Shreyas Patil)
 
         private void btnStart_Click(object sender, EventArgs e)
         {
@@ -195,7 +195,7 @@ namespace World_Clock
         }
 
         // StopWatch Starts Here
-
+        // Ayaan Khan
         private void UpdateTime()
         {
             lblTime.Text = GetTimeString(watch.Elapsed);
@@ -212,7 +212,7 @@ namespace World_Clock
 
             return result;
         }
-
+        // Shreyas Patil
         private void bttnStart_Click(object sender, EventArgs e)
         {
             if (bttnStart.Text == "Start")
